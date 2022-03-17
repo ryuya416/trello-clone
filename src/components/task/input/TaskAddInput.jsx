@@ -8,6 +8,14 @@ export const TaskAddInput = ({
 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    //カードを追加する
+    setTaskList([
+      ...taskList,
+      {
+        text: inputText,
+      },
+    ]);
+    setInputText("");
   };
 
   const handleChange = (e) => {
@@ -21,6 +29,7 @@ export const TaskAddInput = ({
           placeholder="add a task"
           className="taskAddInput"
           onChange={handleChange}
+          value={inputText}
         />
       </form>
     </div>
