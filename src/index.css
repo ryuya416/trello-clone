@@ -17,3 +17,9 @@ header {
   margin-bottom: 50px;
   background: rgb(102, 94, 74);
 }
+
+.app {
+  background: url(../src/images/mountain.jpeg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
